@@ -13,3 +13,6 @@ def connecter_db():
     )
 
     return connexion
+def ajouter_voiture(voiture):
+    conn = connecter_db()
+    cursor = conn.cursor()
