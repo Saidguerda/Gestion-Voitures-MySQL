@@ -1,4 +1,4 @@
-from crud_db import connecter_db
+from crud_db import connecter_db, supprimer_voiture
 
 conn = connecter_db()
 print("Connexion réussie !")
@@ -14,3 +14,5 @@ v3 = Voiture("hyundai", "Elantra", 2019, 18000)
 ajouter_voiture(v1)
 ajouter_voiture(v2)
 ajouter_voiture(v3)
+
+supprimer_voiture(1)
