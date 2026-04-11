@@ -23,3 +23,12 @@ voitures = recuperer_voitures()
 for v in voitures:
     v.afficher_voiture()
 
+from crud_db import modifier_voiture
+v = Voiture("Honda", "Civic CRV", 2022, 22000, 2)
+modifier_voiture(v)
+
+
+
+
+
+
