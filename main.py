@@ -16,3 +16,10 @@ ajouter_voiture(v2)
 ajouter_voiture(v3)
 
 supprimer_voiture(1)
+from crud_db import recuperer_voitures
+
+voitures = recuperer_voitures()
+
+for v in voitures:
+    v.afficher_voiture()
+
